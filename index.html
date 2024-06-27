@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="header">
+        <h1>Cryptocurrency Info</h1>
+        <h3 id="topCoin"></h3>
+    </div>
+    <div id="flex-container">
+        <div id="data-container"></div>
+        <div id="coinChart" >
+            <div class='filter-container'> 
+                    <p>Chart range by market cap:</p>
+                    <input 
+                        type="range" //APEX
+                        class='rangeInput '
+                        id="min"
+                        min=0 
+                        value="0"
+                    />
+                    <label id="minLabel" htmlFor="min"></label>
+                    <br />
+                    <input 
+                        type="range" 
+                        class='rangeInput '
+                        id="max"
+                        max= 1400000000000
+                        value="1400000000000"
+                    />
+                    <label id="maxLabel" htmlFor="max"></label>
+                    <br />
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"  ></script>
+</body>
+</html>

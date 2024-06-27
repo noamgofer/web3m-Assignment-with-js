@@ -1,0 +1,100 @@
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* *****header****** */
+#header {
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(3, 15, 35), rgb(13, 52, 114));
+}
+h1 {
+    font-weight: 300; 
+    font-size: xx-large;
+    color: rgb(216, 225, 235);
+    margin: 0;
+}
+h3 {
+    font-weight: 300; 
+    color: rgb(220, 232, 192);
+    margin: 0;
+}
+
+/* *******flex div*********** */
+
+#flex-container {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+    background-image: linear-gradient(to right, rgb(3, 15, 35), rgb(13, 52, 114));
+    height: 100vh;  
+}
+
+/* ****** data container & boxes***** */
+
+#data-container {
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 20%;
+    background-color: transparent;
+    position: relative;
+    bottom: 50px;
+    left: 50px;     
+}
+.coin-box {
+    border: rgb(4, 34, 60) solid 1px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: small;
+    line-height: 5px;
+    background-color: rgb(4, 34, 60);
+    font-weight: 400;
+    color: rgb(206, 214, 224);
+    transition: 0.6s;
+    
+}
+.coin-box:hover {
+    background-color: rgb(167, 209, 245);
+    color: black;
+}
+
+/* ***chart & filter */
+
+#coinChart {
+    border: none;
+    margin: 10px;
+    background-color: transparent;
+    opacity: 1;
+    padding: 2.5px;
+    position: relative;
+    top: 15px;
+    right: 40px;
+}
+.filter-container {
+    text-align: start;
+    color: aliceblue;
+    font-size: x-small;
+    position: relative;
+    left: 110px;
+}
+.filter-container p{
+    text-align: start;
+    font-weight: 4s00;
+  }
+  .filter-container label{
+    position: relative;
+    left: 10px;
+    bottom: 3px;
+  }
+.rangeInput {
+    width: 70%;
+    height: 10px;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.5;
+}
